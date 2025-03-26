@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+ img {
+    max-width: 100px; 
+    height: auto;
+  }
+
+
+.social {
+    margin: 20px 0;
+}
+
+.contact-info {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 16px;
+}
