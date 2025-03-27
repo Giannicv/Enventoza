@@ -1,0 +1,66 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.registro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+    max-width: 400px;
+    width: 100%; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h2 {
+    text-align: center;
+}
+
+.tarjeta label {
+    margin: 10px 0 5px;
+    display: block;
+}
+
+.tarjeta input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tarjeta button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tarjeta button:hover {
+    background-color: #0056b3;
+}
+
+.tarjeta p {
+    text-align: center;
+}
