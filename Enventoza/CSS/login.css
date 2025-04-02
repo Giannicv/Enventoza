@@ -1,75 +1,164 @@
-
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
+    text-align: center;
 }
 
-main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.encabezado {
+    background-color: #222;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
 }
 
-.login {
-    width: 100%;
+.barra-navegacion {
     display: flex;
-    justify-content: center;
-}
-
-.tarjeta {
-    position: relative;
-    width: 500px;
-    height: 550px;
-    border-radius: 14px;
-    z-index: 1111;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 50px 50px 60px #bebebe, -20px -20px 60px #ffffff;
-    background-color: white; 
+    background-color: #111;
+    padding: 10px;
 }
 
-.tarjeta h2 {
+.logo-navegacion {
+    max-width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.enlace {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.enlace:hover {
+    background-color: rgb(193, 163, 98);
+    color: #212121;
+    border-radius: 5px;
+}
+
+.registro {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registro h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.tarjeta label {
-    margin: 10px 0 5px;
-    display: block;
+.registro p {
+    font-size: 1rem;
+    margin-bottom: 30px;
 }
 
-.tarjeta input {
-    width: 80%; 
+.registro form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.registro input {
     padding: 10px;
-    margin-bottom: 15px;
+    font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
 }
 
-.tarjeta button {
-    width: 80%; 
-    padding: 10px;
-    background-color: #007BFF; 
+.registro button {
+    padding: 12px 24px;
+    background-color: #00ff75;
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.tarjeta button:hover {
-    background-color: #0056b3; 
+.registro button:hover {
+    background-color: #3700ff;
 }
 
-.tarjeta p {
+.pie-de-pagina {
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 40px 0;
+}
+
+.pie-de-pagina img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.redes-sociales a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+.derechos {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos para el navbar y el menú desplegable */
+.menu li {
+    position: relative;
+}
+
+.menu li:hover > .dropdown {
+    transform: translateY(0); /* Muestra el menú */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px); /* Empuja el menú hacia arriba al inicio */
+    transition: transform 0.3s ease-out; /* Desplazamiento suave */
+}
+
+.dropdown a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+.barra-navegacion .menu li:hover > .dropdown {
+    display: block;
 }

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Enventoza</title>
+    <title>Registro - Enventoza</title>
     <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="/CSS/login.css">
+    <link rel="stylesheet" href="/CSS/registro.css">
 </head>
 <body>
     <!-- Header -->
@@ -14,7 +14,7 @@
         <nav class="barra-navegacion">
             <ul class="menu">
                 <img src="/HTML/Img/descarga.png" alt="Logo" class="logo-navegacion">
-                <li><a href="../Index.html"class="enlace">Inicio</a></li>
+                <li><a href="../Index.html" class="enlace">Inicio</a></li>
                 <li><a href="/HTML/signup.html" class="enlace">Categorías</a>
                     <div class="dropdown">
                         <a href="/HTML/Sociales.html">Eventos sociales</a>
@@ -30,13 +30,14 @@
     <!-- Main Content -->
     <main>
         <section class="registro">
-            <h2>¡Únete ahora a Enventoza!</h2>
-            <p>Ingresa a tu cuenta y empieza a disfrutar de organizar eventos.</p>
+            <h2>Formulario de Registro</h2>
+            <p>Por favor, completa el siguiente formulario para crear tu cuenta.</p>
             <form action="/HTML/thankyou.html" method="POST">
-                <input type="text" placeholder="Nombre de usuario" required><br>
+                <input type="text" placeholder="Nombre completo" required><br>
                 <input type="email" placeholder="Correo electrónico" required><br>
                 <input type="password" placeholder="Contraseña" required><br>
-                <button type="submit" class="btn">Sign Up</button>
+                <input type="password" placeholder="Confirmar contraseña" required><br>
+                <button type="submit" class="btn">Registrarse</button>
             </form>
         </section>
     </main>
