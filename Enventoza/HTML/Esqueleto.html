@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/Base.css">
+    <link rel="stylesheet" href="/Enventoza/CSS/Base.css">
 </head>
 <body>
     
@@ -12,7 +12,7 @@
 <header class="encabezado">
     <nav class="barra-navegacion">
         <ul class="menu">
-            <img src="/HTML/Img/descarga.png" alt="Logo" class="logo-navegacion">
+            <img src="/Enventoza/HTML/Img/descarga.png" alt="Logo" class="logo-navegacion">
             <li><a href="index.html" class="enlace">Inicio</a></li>
             <li><a href="/HTML/signup.html" class="enlace">Categorías</a>
                 <div class="dropdown">
@@ -27,9 +27,53 @@
 </header>
 
 
- <!-- Footer -->
+
+<div class="recuadro-verde">
+    <div class="form-container">
+        <h1>Crear Evento</h1>
+        <form>
+            <label for="nombre-evento">Ingresa el nombre de tu evento</label>
+            <input type="text" id="nombre-evento" name="nombre-evento">
+
+            <label for="mes-inicio">Selecciona un mes de inicio del evento</label>
+            <select id="mes-inicio" name="mes-inicio">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+
+            <label for="tipo-evento">Tipo de evento (Opcional)</label>
+            <input type="text" id="tipo-evento" name="tipo-evento">
+
+            <label for="fecha-inicio">Fecha de inicio del evento</label>
+            <input type="date" id="fecha-inicio" name="fecha-inicio">
+
+            <p id="mensaje" style="color: red; display: none;">Esta fecha ya está ocupada</p>
+
+            <label for="descripcion">Agrega una descripción (Opcional)</label>
+            <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+
+            
+
+            <button type="submit">CREAR EVENTO</button>
+        </form>
+    </div>
+</div>
+
+
+
+
  <footer class="pie-de-pagina">
-    <img src="/HTML/Img/descarga.png" alt="Logo de Eventos">
+    <img src="/Enventoza/HTML/Img/descarga.png" alt="Logo de Eventos">
     <div class="redes-sociales">
         <a href="https://es-la.facebook.com/">Facebook</a>
         <a href="https://x.com/">Twitter</a>
@@ -42,5 +86,6 @@
         <p>@2025 Enventoza. Todos los derechos reservados.</p>
     </div>
 </footer>
+
 </body>
 </html>
