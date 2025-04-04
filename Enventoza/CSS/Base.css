@@ -162,3 +162,150 @@ body {
 .barra-navegacion .menu li:hover > .dropdown {
     display: block;
 }
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+ img {
+    max-width: 100px; 
+    height: auto;
+  }
+
+  .recuadro-verde {
+    background-color: #a8a8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 80vw;
+    margin: 20px auto;
+    border: 2px solid #333;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#mensaje {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+    display: none; 
+}
+
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #f0c040;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: #e0b030;
+}
+
+@media only screen and (max-width: 768px) {
+    .recuadro-verde {
+        width: 95vw; 
+        height: auto; 
+    }
+
+    .form-container {
+        width: 100%; 
+        padding: 20px; 
+    }
+
+    .form-container h1 {
+        font-size: 20px; 
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+        font-size: 14px; 
+    }
+
+    .form-container button {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .form-container {
+        padding: 15px; 
+    }
+
+    .form-container h1 {
+        font-size: 18px; 
+    }
+}
